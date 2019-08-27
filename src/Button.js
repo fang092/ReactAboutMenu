@@ -1,4 +1,5 @@
 import React from "react";
+import "./Button.scss";
 
 class aboutMenu extends React.Component {
   constructor(props) {
@@ -44,17 +45,17 @@ class aboutMenu extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="aboutmenu">
         <button onClick={this.toggle}>Exp</button>
         <button onClick={this.toggle2}>Edu</button>
-        <button onClick={this.toggle3}>Projs</button>
+        <button onClick={this.toggle3}>Proj</button>
         <button onClick={this.hideAll}>Hide all</button>
 
         {this.state.showButton ? (
-          <container>
+          <div className="container">
             <h1>Show Me</h1>
             <div>Hi this is show me 1</div>
-          </container>
+          </div>
         ) : null}
 
         {this.state.showButton2 ? (
