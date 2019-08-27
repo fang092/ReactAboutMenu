@@ -45,11 +45,47 @@ class aboutMenu extends React.Component {
 
   render() {
     return (
-      <div id="aboutmenu">
-        <button onClick={this.toggle}>Exp</button>
-        <button onClick={this.toggle2}>Edu</button>
-        <button onClick={this.toggle3}>Proj</button>
-        <button onClick={this.hideAll}>Hide all</button>
+      <div id="aboutmenu" style={{ backgroundColor: "cyan", padding: "2%" }}>
+        <button
+          style={{
+            border: "none",
+            height: "25px",
+            backgroundColor: "transparent"
+          }}
+          onClick={this.toggle}
+        >
+          Exp
+        </button>
+        <button
+          style={{
+            border: "none",
+            height: "25px",
+            backgroundColor: "transparent"
+          }}
+          onClick={this.toggle2}
+        >
+          Edu
+        </button>
+        <button
+          style={{
+            border: "none",
+            height: "25px",
+            backgroundColor: "transparent"
+          }}
+          onClick={this.toggle3}
+        >
+          Proj
+        </button>
+        <button
+          style={{
+            border: "none",
+            height: "25px",
+            backgroundColor: "transparent"
+          }}
+          onClick={this.hideAll}
+        >
+          Hide all
+        </button>
 
         {this.state.showButton ? (
           <div className="container">
