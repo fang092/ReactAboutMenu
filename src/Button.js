@@ -1,5 +1,5 @@
 import React from "react";
-import "./Button.scss";
+import "./styles/Button.css";
 
 class aboutMenu extends React.Component {
   constructor(props) {
@@ -16,7 +16,8 @@ class aboutMenu extends React.Component {
     this.setState({
       showButton: true,
       showButton2: false,
-      showButton3: false
+      showButton3: false,
+      showButton4: false
     });
   };
 
@@ -24,89 +25,129 @@ class aboutMenu extends React.Component {
     this.setState({
       showButton: false,
       showButton2: true,
-      showButton3: false
+      showButton3: false,
+      showButton4: false
     });
   };
   toggle3 = () => {
     this.setState({
       showButton: false,
       showButton2: false,
-      showButton3: true
+      showButton3: true,
+      showButton4: false
     });
   };
 
-  hideAll = () => {
+  toggle4 = () => {
     this.setState({
       showButton: false,
       showButton2: false,
-      showButton3: false
+      showButton3: false,
+      showButton4: true
     });
   };
 
   render() {
     return (
-      <div id="aboutmenu" style={{ backgroundColor: "cyan", padding: "2%" }}>
-        <button
+      <div
+        style={{
+          maxWidth: "1200px",
+          width: "100%",
+          display: "flex",
+          alignItems: "center",
+          height: "450px",
+          backgroundColor: "purple"
+        }}
+      >
+        <div
           style={{
-            border: "none",
-            height: "25px",
-            backgroundColor: "transparent"
+            width: "30%",
+            backgroundColor: "yellow",
+            float: "left",
+            height: "inherit"
           }}
-          onClick={this.toggle}
         >
-          Exp
-        </button>
-        <button
-          style={{
-            border: "none",
-            height: "25px",
-            backgroundColor: "transparent"
-          }}
-          onClick={this.toggle2}
-        >
-          Edu
-        </button>
-        <button
-          style={{
-            border: "none",
-            height: "25px",
-            backgroundColor: "transparent"
-          }}
-          onClick={this.toggle3}
-        >
-          Proj
-        </button>
-        <button
-          style={{
-            border: "none",
-            height: "25px",
-            backgroundColor: "transparent"
-          }}
-          onClick={this.hideAll}
-        >
-          Hide all
-        </button>
+          Hi
+        </div>
 
-        {this.state.showButton ? (
-          <div className="container">
-            <h1>Show Me</h1>
-            <div>Hi this is show me 1</div>
-          </div>
-        ) : null}
+        <div
+          className="aboutmenu"
+          style={{
+            backgroundColor: "cyan",
+            width: "55%",
+            float: "left",
+            height: "inherit"
+          }}
+        >
+          <button
+            style={{
+              border: "none",
+              height: "25px",
+              backgroundColor: "transparent"
+            }}
+            onClick={this.toggle}
+          >
+            Experience
+          </button>
+          <button
+            style={{
+              border: "none",
+              height: "25px",
+              backgroundColor: "transparent"
+            }}
+            onClick={this.toggle2}
+          >
+            Education
+          </button>
+          <button
+            style={{
+              border: "none",
+              height: "25px",
+              backgroundColor: "transparent"
+            }}
+            onClick={this.toggle3}
+          >
+            Projects
+          </button>
+          <button
+            style={{
+              border: "none",
+              height: "25px",
+              backgroundColor: "transparent"
+            }}
+            onClick={this.toggle4}
+          >
+            Skills
+          </button>
 
-        {this.state.showButton2 ? (
-          <container>
-            <h1>Show Me2</h1>
-            <div>Hi this is show me 2</div>
-          </container>
-        ) : null}
+          {this.state.showButton ? (
+            <div className="container">
+              <h1>Show Me</h1>
+              <div>Hi this is show me 1</div>
+            </div>
+          ) : null}
 
-        {this.state.showButton3 ? (
-          <container>
-            <h1>Show Me3</h1>
-            <div>Hi this is show me 3</div>
-          </container>
-        ) : null}
+          {this.state.showButton2 ? (
+            <container>
+              <h1>Show Me2</h1>
+              <div>Hi this is show me 2</div>
+            </container>
+          ) : null}
+
+          {this.state.showButton3 ? (
+            <container>
+              <h1>Show Me3</h1>
+              <div>Hi this is show me 3</div>
+            </container>
+          ) : null}
+
+          {this.state.showButton4 ? (
+            <container>
+              <h1>Show Me4</h1>
+              <div>Hi this is show me 4</div>
+            </container>
+          ) : null}
+        </div>
       </div>
     );
   }
