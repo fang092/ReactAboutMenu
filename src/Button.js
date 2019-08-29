@@ -61,52 +61,17 @@ class aboutMenu extends React.Component {
           Hi
         </div>
 
-        <div
-          style={{
-            backgroundColor: "blue",
-            width: "55%",
-            float: "left",
-            height: "inherit"
-          }}
-        >
-          <button
-            style={{
-              border: "none",
-              height: "25px",
-              backgroundColor: "transparent"
-            }}
-            onClick={this.toggle}
-          >
+        <div className="aboutmenu">
+          <button className="underline" onClick={this.toggle}>
             Experience
           </button>
-          <button
-            style={{
-              border: "none",
-              height: "25px",
-              backgroundColor: "transparent"
-            }}
-            onClick={this.toggle2}
-          >
+          <button className="underline" onClick={this.toggle2}>
             Education
           </button>
-          <button
-            style={{
-              border: "none",
-              height: "25px",
-              backgroundColor: "transparent"
-            }}
-            onClick={this.toggle3}
-          >
+          <button className="underline" onClick={this.toggle3}>
             Projects
           </button>
-          <button
-            style={{
-              border: "none",
-              height: "25px",
-              backgroundColor: "transparent"
-            }}
-            onClick={this.toggle4}
-          >
+          <button className="underline" onClick={this.toggle4}>
             Skills
           </button>
 

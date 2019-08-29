@@ -1,19 +1,25 @@
-div.aboutmenu {
+.menubg {
   width: 100%;
   height: 200px;
   background-color: purple !important;
+  display: flex;
+}
+div.aboutmenu {
+  background-color: blue;
+  width: 55%;
+  float: left;
+  height: inherit;
 }
 .aboutmenu > button {
-  float: left;
-  margin-left: 5%;
-  background-color: blue !important;
+  border: none;
+  height: 25px;
+  background-color: transparent;
 }
 button:hover {
   background-color: skyblue !important;
-  border-bottom: 3px solid black !important;
 }
 /* Underline From Center */
-.hvr-underline-from-center {
+.underline {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -22,25 +28,25 @@ button:hover {
   position: relative;
   overflow: hidden;
 }
-.hvr-underline-from-center:before {
+.underline:before {
   content: "";
   position: absolute;
   z-index: -1;
   left: 51%;
   right: 51%;
   bottom: 0;
-  background: #2098d1;
+  background: black;
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-from-center:hover:before,
-.hvr-underline-from-center:focus:before,
-.hvr-underline-from-center:active:before {
+.underline:hover:before,
+.underline:focus:before,
+.underline:active:before {
   left: 0;
   right: 0;
 }
