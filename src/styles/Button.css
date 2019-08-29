@@ -3,6 +3,15 @@
   height: 200px;
   background-color: purple !important;
   display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+div.photo {
+  width: 30%;
+  background-color: yellow;
+  float: left;
+  height: inherit;
 }
 div.aboutmenu {
   background-color: blue;
@@ -12,6 +21,7 @@ div.aboutmenu {
 }
 .aboutmenu > button {
   border: none;
+  outline: none;
   height: 25px;
   background-color: transparent;
 }

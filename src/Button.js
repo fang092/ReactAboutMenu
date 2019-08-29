@@ -50,16 +50,7 @@ class aboutMenu extends React.Component {
   render() {
     return (
       <div className="menubg">
-        <div
-          style={{
-            width: "30%",
-            backgroundColor: "yellow",
-            float: "left",
-            height: "inherit"
-          }}
-        >
-          Hi
-        </div>
+        <div className="photo">Hi</div>
 
         <div className="aboutmenu">
           <button className="underline" onClick={this.toggle}>
