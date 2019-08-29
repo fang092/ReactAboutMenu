@@ -49,16 +49,7 @@ class aboutMenu extends React.Component {
 
   render() {
     return (
-      <div
-        style={{
-          maxWidth: "1200px",
-          width: "100%",
-          display: "flex",
-          alignItems: "center",
-          height: "450px",
-          backgroundColor: "purple"
-        }}
-      >
+      <div className="menubg">
         <div
           style={{
             width: "30%",
@@ -71,9 +62,8 @@ class aboutMenu extends React.Component {
         </div>
 
         <div
-          className="aboutmenu"
           style={{
-            backgroundColor: "cyan",
+            backgroundColor: "blue",
             width: "55%",
             float: "left",
             height: "inherit"
